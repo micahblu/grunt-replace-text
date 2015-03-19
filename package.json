@@ -1,5 +1,5 @@
 {
-  "name": "grunt-text-replace",
+  "name": "grunt-replace-text",
   "description": "Replace text in files using strings, regexs or functions.",
   "version": "0.1.2",
   "homepage": "https://github.com/micahblu/grunt-replace-text",
