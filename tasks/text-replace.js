@@ -10,8 +10,6 @@ var gruntTextReplace = require('../lib/grunt-text-replace');
 
 module.exports = function(grunt) {
 
-
-
   // Please see the grunt documentation for more information regarding task
   // creation: https://github.com/gruntjs/grunt/blob/devel/docs/toc.md
 
@@ -20,11 +18,11 @@ module.exports = function(grunt) {
     'text in files using strings, regexs or functions.',
     function () {
       gruntTextReplace.replace({
-        options: this.options(),
         src: this.data.src,
         dest: this.data.dest,
         overwrite: this.data.overwrite,
-        replacements: this.data.replacements
+        replacements: this.data.replacements,
+        options: this.data.options
       });
     });
 };
